@@ -1,0 +1,21 @@
+<Project>
+
+  <PropertyGroup Label="Build">
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <Target Name="SetMinVerTagPrefix" BeforeTargets="MinVer">
+    <PropertyGroup Label="Build">
+      <MinVerTagPrefix>$(PackageId).</MinVerTagPrefix>
+    </PropertyGroup>
+  </Target>
+
+  <ItemGroup Label="Package References">
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" PrivateAssets="All" Version="2.9.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" PrivateAssets="All" Version="16.5.132" />
+    <PackageReference Include="MinVer" PrivateAssets="All" Version="2.2.0" />
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="All" Version="1.1.118" />
+  </ItemGroup>
+
+</Project>

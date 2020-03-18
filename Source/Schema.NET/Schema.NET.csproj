@@ -3,12 +3,9 @@
   <PropertyGroup Label="Build">
     <TargetFrameworks>netstandard1.1;netstandard2.0;net461;net472;netcoreapp3.1</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <LangVersion>latest</LangVersion>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup Label="Package">
-    <VersionPrefix>7.1.0</VersionPrefix>
     <Authors>Muhammad Rehan Saeed (RehanSaeed.com)</Authors>
     <Company>Muhammad Rehan Saeed (RehanSaeed.com)</Company>
     <Product>Schema.NET</Product>
@@ -48,12 +45,6 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.1' OR '$(TargetFramework)' == 'net461'">
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-  </ItemGroup>
-
-  <ItemGroup Label="Analyzer Package References">
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" PrivateAssets="All" Version="2.9.8" />
-    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" PrivateAssets="All" Version="16.5.132" />
-    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="All" Version="1.1.118" />
   </ItemGroup>
 
   <ItemGroup Label="Files">
