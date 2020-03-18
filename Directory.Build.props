@@ -7,6 +7,7 @@
 
   <Target Name="SetMinVerTagPrefix" BeforeTargets="MinVer">
     <PropertyGroup Label="Build">
+      <MinVerDefaultPreReleasePhase>preview</MinVerDefaultPreReleasePhase>
       <MinVerTagPrefix>$(PackageId).</MinVerTagPrefix>
     </PropertyGroup>
   </Target>
